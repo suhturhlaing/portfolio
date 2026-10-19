@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adventure Works | Power BI Project</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/project-detail.css">
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        .social-links { margin: 50px 0 10px; }
+        /* .project-footer { flex-direction: column; align-items: center; gap: 16px; text-align: center; } */
+        .back-portfolio { margin-bottom: 0; }
+        @media (max-width: 600px) {
+            .project-subtitle { font-size: 17px; }
+            .project-text p, .info-card p, .brief-card p { text-align: justify; }
+            .project-footer { align-items: center; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="project-header">
+
+        <div class="project-header-inner">
+
+            <a href="../index.html" class="back-link">
+                ← &nbsp Back to Home
+            </a>
+
+            <p class="project-label">POWER BI PROJECT</p>
+
+            <h1>Sale Inventory Report by AdventureWorks</h1>
+
+            <p class="project-subtitle">
+                Sales, Product & Customer Analysis
+            </p>
+
+            <div class="project-skills">
+                <span>SQL</span>
+                <span>Data Analysis</span>
+                <span>Power Query</span>
+                <span>DAX</span>
+                <span>Data Visualization</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="project-container">
+
+
+        <!-- Dashboard Gallery -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <!-- <span>01</span> -->
+                <h2>Power BI Dashboard</h2>
+            </div>
+
+            <div class="project-gallery">
+
+                <figure class="project-image">
+                    <img
+                        src="../images/Project/PowerBI/Sale_Dashboard/Overview.png"
+                        alt="Adventure Works Overview Dashboard"
+                    >
+                    <figcaption>Overview Dashboard</figcaption>
+                </figure>
+
+                <figure class="project-image">
+                    <img
+                        src="../images/Project/PowerBI/Sale_Dashboard/Product.png"
+                        alt="Adventure Works Product Dashboard"
+                    >
+                    <figcaption>Product Analysis</figcaption>
+                </figure>
+
+                <figure class="project-image">
+                    <img
+                        src="../images/Project/PowerBI/Sale_Dashboard/Customer.png"
+                        alt="Adventure Works Customer Dashboard"
+                    >
+                    <figcaption>Customer Analysis</figcaption>
+                </figure>
+
+                <figure class="project-image">
+                    <img
+                        src="../images/Project/PowerBI/Sale_Dashboard/Sale.png"
+                        alt="Adventure Works Sales Dashboard"
+                    >
+                    <figcaption>Sales Analysis</figcaption>
+                </figure>
+
+                <!-- If you add a 5th image later -->
+                <!--
+                <figure class="project-image">
+                    <img
+                        src="../images/Project/PowerBI/Sale_Dashboard/Another.png"
+                        alt="Adventure Works Dashboard"
+                    >
+                    <figcaption>Additional Analysis</figcaption>
+                </figure>
+                -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Project Overview -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <!-- <span>02</span> -->
+                <h2>Project Overview</h2>
+            </div>
+
+            <div class="project-text">
+
+                <p>
+                    Adventure Works Cycles is a global manufacturing company.
+                    This project analyzes sales data from 2015 to 2017
+                    to understand sales performance, products, customers,
+                    and different markets.
+                </p>
+
+                <p>
+                    The project focuses on building an interactive Power BI
+                    dashboard to track key business KPIs and provide
+                    insights into sales, revenue, profit, customers,
+                    products, and country performance.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Dataset -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <!-- <span>03</span> -->
+                <h2>Dataset</h2>
+            </div>
+
+            <div class="info-card">
+
+                <h3>Adventure Works Cycles</h3>
+
+                <p>
+                    Global manufacturing company with sales data
+                    covering the period from 2015 to 2017.
+                </p>
+
+            </div>
+
+            <div class="table-grid">
+
+                <div class="info-card">
+
+                    <h3>Dimension Tables</h3>
+
+                    <ul>
+                        <li>Customers</li>
+                        <li>Sale_Territories</li>
+                        <li>Calendar</li>
+                        <li>Product_Categories</li>
+                        <li>Product_Subcategories</li>
+                        <li>Products</li>
+                        <li>Supplier</li>
+                        <li>SalePerson</li>
+                    </ul>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Fact Table</h3>
+
+                    <ul>
+                        <li>SaleDetails</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Tools -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <!-- <span>04</span> -->
+                <h2>Tools</h2>
+            </div>
+
+            <div class="tools-list">
+
+                <span>SQL</span>
+                <span>Power Query</span>
+                <span>DAX</span>
+                <span>Power BI</span>
+                <span>Data Visualization</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Project Brief -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <!-- <span>05</span> -->
+                <h2>Project Brief</h2>
+            </div>
+
+            <div class="brief-grid">
+
+                <div class="brief-card">
+                    <h3>01</h3>
+                    <p>
+                        Track important KPIs including sales,
+                        revenue, profit and customers.
+                    </p>
+                </div>
+
+                <div class="brief-card">
+                    <h3>02</h3>
+                    <p>
+                        Compare sales performance across
+                        different countries.
+                    </p>
+                </div>
+
+                <div class="brief-card">
+                    <h3>03</h3>
+                    <p>
+                        Identify high-value customers and
+                        perform deeper customer analysis.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Data Model -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                 <!--  <span>06</span> -->
+                <h2>Data Model</h2>
+            </div>
+
+            <div class="data-model">
+
+                <img
+                    src="../images/Project/PowerBI/Sale_Dashboard/Data_Model.png"
+                    alt="Adventure Works Power BI Data Model"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- Power BI -->
+        <section class="project-section dashboard-link-section">
+
+            <div class="section-heading">
+                 <!--  <span>07</span> -->
+                <h2>Interactive Dashboard</h2>
+            </div>
+
+            <p>
+                Explore the interactive Power BI dashboard.
+            </p>
+
+            <a
+                href="https://app.powerbi.com/view?r=eyJrIjoiODU0ZTc1ZmItZjk5MS00NTU5LTkzZWQtYWI4MDc1OWU0YzliIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="dashboard-button"
+            >
+                Open Power BI Dashboard →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Contact / social links -->
+	<ul class="social-links">
+		<li>
+			<a href="https://www.linkedin.com/in/su-htar-hlaing-987867231/?isSelfProfile=true" target="_blank"  aria-label="LinkedIn profile" title="LinkedIn">
+				<i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+               
+			</a>
+		</li>
+		<li>
+			<a href="mailto:shturhlaing@gmail.com" aria-label="Email shturhlaing@gmail.com" title="shturhlaing@gmail.com">
+				<i class="fa-solid fa-envelope" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li>
+			<a href="tel:+95975373636" aria-label="Phone +95 9 89200 7553" title="+95 9 89200 7553">
+				<i class="fa-solid fa-phone" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/suhturhlaing" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
+				<i class="fa-brands fa-github" aria-hidden="true"></i>
+			</a>
+		</li>
+	</ul>
+
+
+    <!-- Footer -->
+    <footer class="project-footer">
+
+       
+
+        <a href="../index.html" class="back-portfolio" >
+            ← Back to Portfolio
+        </a>
+
+        <p>
+            © Su Htur's Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>

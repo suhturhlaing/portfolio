@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Human Resources | Power BI Project</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/project-detail.css">
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+        .social-links { margin: 50px 0 10px; }
+        /* .project-footer { flex-direction: column; align-items: center; gap: 16px; text-align: center; } */
+        .back-portfolio { margin-bottom: 0; }
+        @media (max-width: 600px) {
+            .project-subtitle { font-size: 17px; }
+            .project-text p, .info-card p, .brief-card p { text-align: justify; }
+            .project-footer { align-items: center; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="project-header">
+
+        <div class="project-header-inner">
+
+            <a href="../index.html" class="back-link">
+                ← &nbsp Back to Home
+            </a>
+
+            <p class="project-label">POWER BI PROJECT</p>
+
+            <h1>HR Analytics Dashboard</h1>
+
+            <p class="project-subtitle">
+                Employee, Department & Workforce Analysis
+            </p>
+
+            <div class="project-skills">
+                <span>Power BI</span>
+                <span>Data Analysis</span>
+                <span>Dashboard Design</span>
+                <span>HR Analytics</span>
+                <span>SQL</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="project-container">
+
+
+        <!-- Dashboard Gallery -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <!-- <span>01</span> -->
+                <h2>Power BI Dashboard</h2>
+            </div>
+
+            <div class="project-gallery">
+
+                <figure class="project-image">
+                    <img
+                        src="../images/Project/PowerBI/HR_Dashboard/HR_Overview.png"
+                        alt="HR Dashboard"
+                    >
+                    <figcaption>Overview Dashboard</figcaption>
+                </figure>
+
+                <figure class="project-image">
+                    <img
+                        src="../images/Project/PowerBI/HR_Dashboard/HR_Dep.png"
+                        alt="HR Dashboard"
+                    >
+                    <figcaption>Department Analysis</figcaption>
+                </figure>
+
+                <figure class="project-image">
+                    <img
+                        src="../images/Project/PowerBI/HR_Dashboard/HR_Emp.png"
+                        alt="HR Dashboard"
+                    >
+                    <figcaption>Employee Analysis 1</figcaption>
+                </figure>
+
+                <figure class="project-image">
+                    <img
+                        src="../images/Project/PowerBI/HR_Dashboard/HR_Emp1.png"
+                        alt="HR Dashboard"
+                    >
+                    <figcaption>Employee Analysis 2</figcaption>
+                </figure>
+
+                <!-- If you add a 5th image later -->
+                <!--
+                <figure class="project-image">
+                    <img
+                        src="../images/Project/PowerBI/Sale_Dashboard/Another.png"
+                        alt="Adventure Works Dashboard"
+                    >
+                    <figcaption>Additional Analysis</figcaption>
+                </figure>
+                -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Project Overview -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <!-- <span>02</span> -->
+                <h2>Project Overview</h2>
+            </div>
+
+            <div class="project-text">
+
+                <p>
+				    This HR Analytics Dashboard provides an interactive view of
+				    employee information, workforce structure, departmental distribution,
+				    payroll, promotion status, retirement status, and employee service years.
+				</p>
+
+				<p>
+				    The dashboard is designed to help analyze workforce characteristics
+				    and provide a clear overview of employee demographics, organizational
+				    levels, department distribution, working shifts, payroll, and employee
+				    status.
+				</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Dataset -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <!-- <span>03</span> -->
+                <h2>Dataset</h2>
+            </div>
+
+            <div class="info-card">
+
+                <h3>HR Employee Dataset</h3>
+
+    			<p>
+    			    The dashboard analyzes employee-level HR information including
+    			    department, employee name, age, shift, organization level,
+    			    payroll, salary per day, sick leave, service years, employee
+    			    status, and hiring information.
+    			</p>
+
+
+            </div>
+
+            <div class="table-grid">
+
+                <div class="info-card">
+
+                    <h3>Dimension Tables</h3>
+
+                    <ul>
+                        <li>Hr_Shift</li>
+                        <li>HR_Department</li>
+                        <li>Employee_Department</li>
+                        <li>Employee_Pay_History</li>
+                        <li>HumanResources_vJobCandidate_Employee</li>
+                        <li>HumanResources_vJobCandidate_Education</li>
+                    </ul>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Fact Table</h3>
+
+                    <ul>
+						<li>Fact_Employee</li>
+                        <li>HumanResources_vJobCandidate</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Tools -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <!-- <span>04</span> -->
+                <h2>Tools</h2>
+            </div>
+
+            <div class="tools-list">
+
+                <span>Power BI</span>
+        		<span>Data Analysis</span>
+        		<span>Data Visualization</span>
+        		<span>HR Analytics</span>
+        		<span>Dashboard Design</span>
+				<span>SQL</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Project Brief -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <!-- <span>05</span> -->
+                <h2>Project Brief</h2>
+            </div>
+
+            <div class="brief-grid">
+
+                <div class="brief-card">
+                    <h3>01</h3>
+                    <p>
+        			    Analyze employee demographics including gender,
+        			    department, service years, organization level,
+        			    and working shift.
+        			</p>
+                </div>
+
+                <div class="brief-card">
+                    <h3>02</h3>
+                    <p>
+        			    Analyze departmental workforce distribution and
+        			    monthly payroll costs across departments.
+        			</p>
+                </div>
+
+                <div class="brief-card">
+                    <h3>03</h3>
+                    <p>
+        			    Identify employees due for promotion, employees
+        			    approaching retirement, salary patterns, and
+        			    sick-leave trends.
+        			</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Data Model -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                 <!--  <span>06</span> -->
+                <h2>Data Model</h2>
+            </div>
+
+            <div class="data-model">
+
+                <img
+                    src="../images/Project/PowerBI/HR_Dashboard/HR_Data_Model.png"
+                    alt="Adventure Works Power BI Data Model"
+                >
+
+            </div>
+
+        </section>
+
+		<!-- Acknowledgement -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <!-- <span>02</span> -->
+                <h2> ✍ Acknowledgement</h2>
+            </div>
+
+            <div class="project-text">
+
+                <p>
+				    I would like to express my sincere gratitude to <strong style="color: #222222; font-weight: 700 !important;">Databuzz KP</strong> for organizing Data Challenge #01 and providing an excellent opportunity to apply my data analytics skills to a real-world business scenario.
+					<br>
+					I am truly grateful for the opportunity to work with the AdventureWorks2022 database, explore HR-related insights, and challenge myself through this competition.
+				</p>
+
+				<p>
+				    Receiving <strong style="color: #222222; font-weight: 700 !important;">2nd Prize</strong> for this project was an unexpected and rewarding experience. 🥈 I sincerely appreciate Databuzz KP for creating a platform that encourages learning, practical experience, and continuous growth in data analytics.
+					<br>
+					Thank you, <strong style="color: #222222; font-weight: 700 !important;"> Databuzz KP,</strong> for the opportunity, inspiration, and recognition.
+				</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Power BI -->
+        <section class="project-section dashboard-link-section">
+
+            <div class="section-heading">
+                 <!--  <span>07</span> -->
+                <h2>Interactive Dashboard</h2>
+            </div>
+
+            <p>
+                Explore the interactive Power BI dashboard.
+            </p>
+
+            <a
+                href="https://app.powerbi.com/view?r=eyJrIjoiMzQ1MmQ0ZjAtYmEyOC00MzYzLWIzYzgtNWY0NzUxOGViYjE0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="dashboard-button"
+            >
+                Open Power BI Dashboard →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Contact / social links -->
+	<ul class="social-links">
+		<li>
+			<a href="https://www.linkedin.com/in/su-htar-hlaing-987867231/?isSelfProfile=true" target="_blank" aria-label="LinkedIn profile" title="LinkedIn">
+				<i class="icon brands fa-linkedin-in" aria-hidden="true"></i>
+               
+			</a>
+		</li>
+		<li>
+			<a href="mailto:shturhlaing@gmail.com" aria-label="Email shturhlaing@gmail.com" title="shturhlaing@gmail.com">
+				<i class="icon solid fa-envelope" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li>
+			<a href="tel:+95975373636" aria-label="Phone +95 9 89200 7553" title="+95 9 89200 7553">
+				<i class="icon solid fa-phone" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/suhturhlaing" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
+				<i class="icon brands fa-github" aria-hidden="true"></i>
+			</a>
+		</li>
+	</ul>
+
+
+    <!-- Footer -->
+    <footer class="project-footer">
+
+       
+
+        <a href="../index.html" class="back-portfolio" >
+            ← Back to Portfolio
+        </a>
+
+        <p>
+            © Su Htur's Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>
