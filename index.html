@@ -1,0 +1,1607 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Su Htur Hlaing's Data Analyst Portfolio - </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+
+
+
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;900&display=swap"
+		rel="stylesheet">
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+	<style>
+		ul.skill {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		ul.skill li {
+			margin-bottom: 10px;
+		}
+
+		ul.skill li a.active {
+			display: inline-block;
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 10px;
+			transition: background-color 0.3s ease;
+			font-weight: 400;
+			font-family: Inconsolata;
+			background-color: #935d8c !important;
+			color: #ffffff !important;
+			box-shadow: none;
+		}
+
+
+		ul.skill li a {
+			display: inline-block;
+			padding: 10px 20px;
+			text-decoration: none;
+			color: #ad1c9b;
+			background-color: #F2F3FE;
+			border-radius: 10px;
+			transition: background-color 0.3s ease;
+			font-weight: 400;
+			font-family: Inconsolata;
+		}
+
+		/*
+			ul.skill li a:hover {
+				background-color: #e0e0e0; 
+				color : #935d8c;
+
+			}
+				*/
+
+		ul.skill li a:hover {
+			background-color: #b49bb0 !important;
+			color: #636363 !important;
+
+		}
+
+		/* for profile picture */
+		.profile-pic {
+			width: 400px;
+			/* Set your desired size */
+			height: 400px;
+			/* Must match width for a circle */
+			border-radius: 50%;
+			/* Clips image into a circle */
+			object-fit: cover;
+			/* Prevents image stretching */
+
+			/* Gradient border styling */
+			border: 4px solid transparent;
+			background:
+				linear-gradient(white, white) padding-box,
+				linear-gradient(135deg, #ad84d4, #2a2c2d) border-box;
+
+			/* Layout settings */
+			float: right;
+			margin-left: 20px;
+		}
+
+		/* Align Highlights / Skills bullets with their titles */
+		#intro ul.highlights { padding-left: 1.1em !important; margin-left: 0 !important; text-align: justify; }
+		#intro ul.highlights li { padding-left: 0.2em !important; margin-left: 0 !important; }
+		#intro .skills-section ul.content { padding-left: 14px; margin-left: 0; }
+		#intro .skills-section .content-line { align-items: flex-start; }
+		#intro .skills-section .content-line::before { left: -14px; top: 0.7em; }
+		@media (max-width: 736px) {
+			#intro .skills-section .content-line { flex-direction: column; }
+			#intro .skills-section .label { min-width: 0; font-weight: 600; }
+			#intro .content p, #intro .content li { text-align: justify; hyphens: auto; }
+		}
+		/* Hero (responsive) */
+		.hero { margin: 80px auto; width: 100%; padding: 0 16px; box-sizing: border-box; text-align: center; }
+		.hero-title { font-size: clamp(2.6rem, 9vw, 100px); line-height: 1.1; color: #935d8c;
+			font-family: Montserrat, sans-serif; font-weight: 800; margin: 0 0 0.4em; overflow-wrap: break-word; }
+		.hero-subtitle { color: black; font-family: Inconsolata, monospace; font-size: clamp(0.95rem, 2.2vw, 1.25rem);
+			line-height: 1.6; max-width: 46rem; margin: 0 auto 1.5rem; }
+		@media (min-width: 737px) {
+			.hero-subtitle { max-width: none; white-space: nowrap; letter-spacing: 0; text-align: center; font-size: min(1.2rem, 1.45vw); }
+		}
+		@media (max-width: 736px) {
+			.hero { margin: 40px auto 32px; }
+			.hero-subtitle { letter-spacing: 0; }
+			.profile-pic { float: none !important; display: block; margin: 0 auto 24px !important;
+				width: min(260px, 70vw); height: min(260px, 70vw); }
+		}
+		/* =========================================================
+			   Palette
+			     Main headings .... Deep Navy      #24324A
+			     Brand / accent ... Mauve Purple   #935D8C
+			     Secondary ........ Dark Purple    #765078
+			     Body text ........ Slate Gray     #4B5563
+			     Background ....... White          #FFFFFF
+			     Soft surface ..... Soft Lavender  #F5F1F6
+			     Border / divider . Light Gray     #E5E7EB
+			   ========================================================= */
+
+		/* =========================================================
+			   Project sections — card grid
+			   (Excel & Gsheets, SQL, BI, Python, Storytelling, Certifications)
+			   ========================================================= */
+
+		/* --- Section header --- */
+		.projects-section .section-head {
+			margin-bottom: 3.25em;
+			text-align: left;
+		}
+
+		.projects-section .section-head .section-eyebrow {
+			font-family: Inconsolata, monospace;
+			font-size: 0.8em;
+			font-weight: 600;
+			letter-spacing: 0.22em;
+			text-transform: uppercase;
+			color: #935d8c;
+			margin: 0 0 0.9em 0;
+		}
+
+		/* plain navy heading — drops the site-wide blue highlight block on h2 span */
+		.projects-section .section-head h2,
+		.projects-section h2 {
+			margin: 0;
+			color: #24324A;
+		}
+
+		.projects-section h2 span {
+			background: none;
+			background-color: transparent;
+			padding: 0;
+			color: #24324A;
+		}
+
+		.projects-section .section-head h2:after {
+			display: none;
+		}
+
+		.projects-section .section-head .section-rule {
+			width: 68px;
+			height: 3px;
+			margin: 1em 0 1.15em 0;
+			border-radius: 2px;
+			background: linear-gradient(90deg, #935d8c 0%, #765078 100%);
+		}
+
+		.projects-section .section-head .section-sub {
+			max-width: 46em;
+			margin: 0 0 1.6em 0;
+			font-size: 1.05em;
+			line-height: 1.75;
+			letter-spacing: 0;
+			color: #4B5563;
+		}
+
+		.projects-section .skill-chips {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			gap: 0.55em;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.projects-section .skill-chips li {
+			margin: 0;
+			padding: 0.42em 0.95em;
+			border: 1px solid #E5E7EB;
+			border-radius: 999px;
+			background: #F5F1F6;
+			font-family: Inconsolata, monospace;
+			font-size: 0.85em;
+			line-height: 1.4;
+			color: #4B5563;
+			white-space: nowrap;
+		}
+
+		/* --- Grid --- */
+		.projects-section .features {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 2em;
+			width: 100%;
+			margin: 0 0 1em 0;
+			padding: 0;
+			list-style: none;
+			text-align: left;
+		}
+
+		.projects-section .features li {
+			width: auto;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			box-shadow: none;
+		}
+
+		/* --- Card --- */
+		.projects-section .project-card>a {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			background: #ffffff;
+			border: 1px solid #E5E7EB;
+			border-radius: 14px;
+			overflow: hidden;
+			text-decoration: none;
+			box-shadow: 0 1px 2px rgba(36, 50, 74, 0.05), 0 10px 28px -18px rgba(36, 50, 74, 0.28);
+			transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.3, 1),
+				box-shadow 0.35s ease,
+				border-color 0.35s ease;
+		}
+
+		.projects-section .project-card>a:hover,
+		.projects-section .project-card>a:focus-visible {
+			transform: translateY(-6px);
+			border-color: #935D8C;
+			box-shadow: 0 2px 4px rgba(36, 50, 74, 0.06), 0 22px 44px -22px rgba(147, 93, 140, 0.5);
+		}
+
+		.projects-section .project-card>a:focus-visible {
+			outline: 3px solid rgba(147, 93, 140, 0.4);
+			outline-offset: 3px;
+		}
+
+		/* Image band — uniform ratio for mixed-size covers */
+		.projects-section .project-card__media {
+			position: relative;
+			display: block;
+			aspect-ratio: 16 / 9;
+			background: #F5F1F6;
+			border-bottom: 1px solid #E5E7EB;
+			overflow: hidden;
+		}
+
+		.projects-section .project-card__media img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			object-fit: cover;
+			object-position: top center;
+			transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.3, 1);
+		}
+
+		.projects-section .project-card>a:hover .project-card__media img {
+			transform: scale(1.045);
+		}
+
+		/* --- Card body --- */
+		.projects-section .project-card__body {
+			display: flex;
+			flex: 1 1 auto;
+			flex-direction: column;
+			padding: 1.35em 1.4em 1.25em 1.4em;
+		}
+
+		.projects-section .project-card__title {
+			display: block;
+			font-family: Montserrat, 'Source Sans Pro', sans-serif;
+			font-size: 1.05em;
+			font-weight: 700;
+			line-height: 1.35;
+			letter-spacing: -0.01em;
+			color: #24324A;
+			margin-bottom: 0.5em;
+		}
+
+		.projects-section .project-card__desc {
+			display: block;
+			flex: 1 1 auto;
+			font-size: 0.92em;
+			line-height: 1.65;
+			color: #4B5563;
+			margin-bottom: 1.1em;
+		}
+
+		.projects-section .project-card__tags {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			gap: 0.45em 0.4em;
+			margin-bottom: 1.1em;
+		}
+
+		.projects-section .tag {
+			display: inline-flex;
+			align-items: center;
+			flex: 0 0 auto;
+			gap: 0.4em;
+			padding: 0.3em 0.65em;
+			border: 1px solid #E5E7EB;
+			border-radius: 999px;
+			background: #F5F1F6;
+			font-family: Inconsolata, monospace;
+			font-size: 0.65em;
+			letter-spacing: 0.01em;
+			line-height: 1.6;
+			color: #4B5563;
+			white-space: nowrap;
+		}
+
+		.projects-section .tag:before {
+			content: '';
+			flex: 0 0 auto;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background: #935d8c;
+		}
+
+		.projects-section .tag--excel:before {
+			background: #217346;
+		}
+
+		.projects-section .tag--sheets:before {
+			background: #0f9d58;
+		}
+
+		.projects-section .tag--slides:before {
+			background: #f4b400;
+		}
+
+		.projects-section .tag--mysql:before {
+			background: #00758f;
+		}
+
+		.projects-section .tag--postgres:before {
+			background: #336791;
+		}
+
+		.projects-section .tag--powerbi:before {
+			background: #e8a800;
+		}
+
+		.projects-section .tag--python:before {
+			background: #3776ab;
+		}
+
+		.projects-section .tag--pandas:before {
+			background: #9b4f96;
+		}
+
+		.projects-section .project-card__cta {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.5em;
+			margin-top: auto;
+			padding-top: 0.9em;
+			border-top: 1px solid #E5E7EB;
+			font-family: Inconsolata, monospace;
+			font-size: 0.85em;
+			font-weight: 600;
+			letter-spacing: 0.02em;
+			color: #935d8c;
+		}
+
+		.projects-section .project-card__cta i {
+			transition: transform 0.3s ease;
+		}
+
+		.projects-section .project-card>a:hover .project-card__cta i {
+			transform: translateX(5px);
+		}
+
+		/* --- Responsive --- */
+		@media screen and (max-width: 980px) {
+			.projects-section .features {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 1.75em;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			.projects-section .features {
+				grid-template-columns: minmax(0, 1fr);
+				gap: 1.5em;
+			}
+
+			.projects-section .section-head {
+				margin-bottom: 2.25em;
+			}
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+
+			.projects-section .project-card>a,
+			.projects-section .project-card__media img,
+			.projects-section .project-card__cta i {
+				transition: none;
+			}
+
+			.projects-section .project-card>a:hover {
+				transform: none;
+			}
+
+			.projects-section .project-card>a:hover .project-card__media img {
+				transform: none;
+			}
+		}
+
+		/* =========================================================
+			   Certified Badges & Professional Certifications
+			   ========================================================= */
+
+		/* section.special centers text — needs matching specificity to undo */
+		section.credentials-section {
+			text-align: left;
+		}
+
+		.credentials-section .cred-block+.cred-block {
+			margin-top: 3.5em;
+		}
+
+		.credentials-section .cred-block__title {
+			display: flex;
+			align-items: center;
+			gap: 0.7em;
+			margin: 0 0 1.5em 0;
+			font-family: Montserrat, 'Source Sans Pro', sans-serif;
+			font-size: 1.15em;
+			font-weight: 700;
+			letter-spacing: -0.01em;
+			text-align: left;
+			color: #24324A;
+		}
+
+		.credentials-section .cred-block__title:after {
+			content: '';
+			flex: 1 1 auto;
+			height: 1px;
+			background: #E5E7EB;
+		}
+
+		/* --- Certified badges --- */
+		.credentials-section .badge-grid {
+			display: grid;
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+			gap: 1.5em;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.credentials-section .badge-grid--3 {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		.credentials-section .badge {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			margin: 0;
+			padding: 1.8em 1.2em 1.5em 1.2em;
+			background: #ffffff;
+			border: 1px solid #E5E7EB;
+			border-radius: 14px;
+			box-shadow: 0 1px 2px rgba(36, 50, 74, 0.05), 0 10px 28px -18px rgba(36, 50, 74, 0.28);
+			transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.3, 1), box-shadow 0.35s ease;
+		}
+
+		.credentials-section .badge:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 2px 4px rgba(36, 50, 74, 0.06), 0 22px 44px -22px rgba(147, 93, 140, 0.5);
+		}
+
+		/* hexagon medallion — issuer mark, no image assets needed */
+		/* .credentials-section .badge__medal {
+				display: grid;
+				place-items: center;
+				width: 4.4em;
+				height: 4.9em;
+				margin-bottom: 1em;
+				clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+				background: linear-gradient(140deg, #935d8c, #765078);
+				color: #ffffff;
+				font-size: 1em;
+			}
+				*/
+
+		.credentials-section .badge__medal {
+			display: grid;
+			place-items: center;
+			width: 4.4em;
+			height: 4.4em;
+			margin-bottom: 1em;
+			border-radius: 8px;
+			background: linear-gradient(140deg, #935d8c, #765078);
+			color: #ffffff;
+			font-size: 1em;
+		}
+
+		.credentials-section .badge__medal i {
+			font-size: 1.7em;
+			line-height: 1;
+		}
+
+
+
+		.credentials-section .badge__medal img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			transition: transform 0.3s ease;
+		}
+
+
+		.certificate-card:hover .certificate-card__image img {
+			transform: scale(1.02);
+		}
+
+		.credentials-section .badge--microsoft .badge__medal {
+			background: linear-gradient(140deg, #2b8fe0, #0055a4);
+		}
+
+		.credentials-section .badge--google .badge__medal {
+			background: linear-gradient(140deg, #4285f4, #1a73e8);
+		}
+
+		.credentials-section .badge--googleai .badge__medal {
+			background: linear-gradient(140deg, #f9ab00, #ea4335);
+		}
+
+		.credentials-section .badge--meta .badge__medal {
+			background: linear-gradient(140deg, #0a7cff, #0047b3);
+		}
+
+		.credentials-section .badge--fabric .badge__medal {
+			background: linear-gradient(140deg, #12a19a, #0b6a63);
+		}
+
+		.credentials-section .badge--aws .badge__medal {
+			background: linear-gradient(140deg, #ff9900, #e07000);
+		}
+
+		.credentials-section .badge__name {
+			display: block;
+			font-family: Montserrat, 'Source Sans Pro', sans-serif;
+			font-size: 0.8em;
+			font-weight: 700;
+			line-height: 1.35;
+			color: #24324A;
+			margin-bottom: 0.45em;
+			margin-top: 0.6em;
+		}
+
+		.credentials-section .badge__meta {
+			display: block;
+			margin-top: auto;
+			font-family: Inconsolata, monospace;
+			font-size: 0.68em;
+			letter-spacing: 0.03em;
+			line-height: 1.5;
+			color: #4B5563;
+		}
+
+		/* --- Responsive --- */
+		@media screen and (max-width: 980px) {
+
+			.credentials-section .badge-grid,
+			.credentials-section .badge-grid--3 {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.credentials-section .badge-grid,
+			.credentials-section .badge-grid--3 {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.credentials-section .badge {
+				transition: none;
+			}
+
+			.credentials-section .badge:hover {
+				transform: none;
+			}
+		}
+
+		/* =========================================================
+			   Contact / social links under the header tagline
+			   ========================================================= */
+
+		.social-links {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 14px;
+			margin: 28px 0 0 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.social-links li {
+			margin: 0;
+			padding: 0;
+		}
+
+		.social-links a {
+			display: grid;
+			place-items: center;
+			width: 46px;
+			height: 46px;
+			border-radius: 50%;
+			background: #F5F1F6;
+			border: 1px solid #E5E7EB;
+			color: #935D8C;
+			font-size: 18px;
+			line-height: 1;
+			text-decoration: none;
+			box-shadow: 0 1px 2px rgba(36, 50, 74, 0.05);
+			transition: background-color 0.3s ease, border-color 0.3s ease,
+				color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.social-links a:hover,
+		.social-links a:focus-visible {
+			background: #935D8C;
+			border-color: #935D8C;
+			color: #FFFFFF;
+			transform: translateY(-3px);
+			box-shadow: 0 10px 20px -10px rgba(147, 93, 140, 0.8);
+		}
+
+		.social-links a:focus-visible {
+			outline: 3px solid rgba(147, 93, 140, 0.4);
+			outline-offset: 3px;
+		}
+
+		@media screen and (max-width: 736px) {
+			.social-links {
+				gap: 12px;
+				margin-top: 22px;
+			}
+
+			.social-links a {
+				width: 42px;
+				height: 42px;
+				font-size: 16px;
+			}
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.social-links a {
+				transition: none;
+			}
+
+			.social-links a:hover {
+				transform: none;
+			}
+		}
+
+	
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+
+		<div class="hero">
+			<h1 class="hero-title">
+				Su Htur Hlaing
+				<!-- <span style="color: black;">Portfolio.</span> -->
+			</h1>
+			<h3 class="hero-subtitle">— Business Intelligence Analyst |
+				Data Analytics | BI & Reporting | Data-Driven Solutions —</h3>
+
+			<!-- Contact / social links -->
+			<ul class="social-links">
+				<li>
+					<a href="https://www.linkedin.com/in/su-htar-hlaing-987867231/?isSelfProfile=true" target="_blank"
+						aria-label="LinkedIn profile" title="LinkedIn">
+						<i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:shturhlaing@gmail.com" aria-label="Email shturhlaing@gmail.com"
+						title="shturhlaing@gmail.com">
+						<i class="fa-solid fa-envelope" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="tel:+959892007553" aria-label="Phone +95 9 89200 7553" title="+95 9 89200 7553">
+						<i class="fa-solid fa-phone" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/suhturhlaing" target="_blank" rel="noopener noreferrer"
+						aria-label="GitHub profile" title="GitHub">
+						<i class="fa-brands fa-github" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<nav id="nav">
+			<ul class="skill">
+				<!-- <li><a href="#intro" class="active">About Me</a></li> -->
+
+				<li><a href="#powerbi">Power BI</a></li>
+				<li><a href="#power_automate">Power Automate</a></li>
+				<li><a href="#python">Python</a></li>
+				<!-- <li><a href="#excel">Excel</a></li> -->
+				<!-- <li><a href="#blog">Power Automate</a></li> -->
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Introduction -->
+			<section id="intro" class="main">
+				<div class="spotlight">
+					<div class="content">
+
+
+						<!-- <p class="row"> -->
+						<!-- <div class="column" style="margin: auto; text-align: center;"> -->
+						<img src="images/shh_profile_photo1.png" alt="Profile"
+							class="profile-pic">
+						<!-- </div> -->
+
+						<div style="clear: right; text-align: left;  display: inline;">
+							<p><b>About Me</b></p>
+
+							<p>I am Su Htar,</p>
+							<p>
+								Business Intelligence Analyst with 6+ years of technology experience, including 4+ years
+								in BI, data analytics, data modeling, and reporting. I transform complex data into
+								actionable insights through SQL, Python, Power BI, AWS Redshift, and Microsoft Fabric,
+								helping teams understand performance and make data-driven decisions. With a software
+								engineering background and Microsoft certifications in Power BI and Fabric Analytics, I
+								bring both analytical and technical expertise to building practical data solutions. </p>
+
+							<p><b>Highlights</b></p>
+							<ul class="highlights">
+								<li>6+ years of total technology experience, including 4+ years specializing in Business
+									Intelligence, data analytics, data modeling, and reporting.</li>
+
+								<li>Experienced in transforming complex, multi-source datasets into actionable business
+									insights, performance reports, and data-driven recommendations.</li>
+								<li>Hands-on experience developing Power BI dashboards, analytical reports, data models,
+									and automated reporting solutions.</li>
+
+								<li>Strong technical expertise in SQL, Python, Power BI, AWS Redshift, and Microsoft
+									Fabric.</li>
+
+								<li>Experienced in data migration and modernization, including migrating data from
+									on-premises environments to AWS Redshift and Microsoft Fabric.</li>
+								<li>Experience supporting new core banking data migration, including data preparation,
+									transformation, validation, and reconciliation.</li>
+
+								<li>Strong background in data analysis, BI reporting, reporting automation, data
+									quality, and technical problem-solving.</li>
+
+								<li>Previous software engineering experience, providing a strong foundation in
+									application development, databases, and technical solution development.</li>
+								<li>Microsoft-certified in Power BI and Fabric Analytics, with a B.C.Sc. in Computer
+									Science.</li>
+							</ul>
+
+
+							<div class="skills-section">
+								<p class="section-title"><b>Skills</b></p>
+
+								<ul class="content">
+									<li class="content-line">
+										<span class="label">BI &amp; Analytics</span>
+										<span class="value">
+											Business Intelligence, Data Analytics, Business Insights,
+											KPI Analysis, Trend Analysis, Campaign Analysis,
+											Data Visualization, Reporting Automation
+										</span>
+									</li>
+
+									<li class="content-line">
+										<span class="label">BI Tools</span>
+										<span class="value">
+											Power BI, Looker Studio, Power BI Paginated Report, SSRS, Power Automate, Dashboards
+										</span>
+									</li>
+
+									<li class="content-line">
+										<span class="label">Data &amp; Databases</span>
+										<span class="value">
+											SQL, SQL Server, MySQL, Oracle, AWS Redshift, Microsoft Fabric
+										</span>
+									</li>
+
+									<li class="content-line">
+										<span class="label">Data Engineering &amp; Quality</span>
+										<span class="value">
+											Data Modeling, Data Architecture, Data Migration,
+											Data Transformation, Data Validation, Data Cleansing,
+											Data Quality, Data Governance, Performance Tuning
+										</span>
+									</li>
+
+									<li class="content-line">
+										<span class="label">Programming</span>
+										<span class="value">
+											Python, JavaScript, PHP, React.js, HTML, CSS
+										</span>
+									</li>
+
+									<li class="content-line">
+										<span class="label">Cloud &amp; Platforms</span>
+										<span class="value">
+											AWS, Microsoft Fabric, Databricks
+										</span>
+									</li>
+
+									<li class="content-line">
+										<span class="label">Tools</span>
+										<span class="value">
+											Excel, SharePoint, Google Sheets, Google Analytics,
+											Jira, Confluence, GitHub, Flow.io
+										</span>
+									</li>
+
+									<li class="content-line">
+										<span class="label">Languages</span>
+										<span class="value">
+											English : Intermediate, Burmese(Myanmar) :Native
+										</span>
+									</li>
+								</ul>
+							</div>
+
+
+						</div>
+
+						<div style="clear: both; "></div>
+
+						<div style="clear: both; "></div>
+						<!--
+										<h2 style="font-weight: 900; font-size: 25pt; text-align: center; margin-top: 30px;">I'm open to work!</h2>
+										-->
+					</div>
+
+				</div>
+
+			</section>
+
+			<!-- First Section -->
+			<section id="powerbi" class="main special projects-section">
+				<header class="major section-head">
+					<p class="section-eyebrow">Dashboards &amp; Reporting</p>
+					<h2><span>BI Projects</span></h2>
+					<div class="section-rule" aria-hidden="true"></div>
+					<p class="section-sub">End-to-end Power BI reports — connecting and shaping the sources, building
+						the data model and DAX measures, then designing dashboards business users can navigate on their
+						own.</p>
+					<ul class="skill-chips">
+						<li>Connect Data Sources</li>
+						<li>Clean &amp; Shape</li>
+						<li>Data Model</li>
+						<li>Power Query</li>
+						<li>DAX</li>
+						<li>Data Visualization</li>
+						<li>Dashboard Design</li>
+					</ul>
+				</header>
+
+				<ul class="features">
+					<li class="project-card">
+						<a href="powerbi-projects/adventure-works.html">
+							<span class="project-card__media">
+								<img src="images/Project/PowerBI/Sale_Dashboard/Overview.png"
+									alt="Adventure Works sales and customer analysis dashboard" loading="lazy">
+							</span>
+							<span class="project-card__body">
+								<span class="project-card__title">Sale Inventory</span>
+								<span class="project-card__desc">Sales &amp; customer analysis across products, regions
+									and segments.</span>
+								<span class="project-card__tags">
+									<span class="tag tag--powerbi">Power BI</span>
+									<span class="tag tag--powerbi">Data Model</span>
+									<span class="tag tag--powerbi">DAX</span>
+									<span class="tag tag--powerbi">SQL</span>
+									<span class="tag tag--powerbi">Power Query</span>
+								</span>
+								<span class="project-card__cta">View case study <i class="fa-solid fa-arrow-right"
+										aria-hidden="true"></i></span>
+							</span>
+						</a>
+					</li>
+
+					<li class="project-card">
+						<a href="powerbi-projects/human-resources.html">
+							<span class="project-card__media">
+								<img src="images/Project/PowerBI/HR_Dashboard/HR_Overview.png"
+									alt="Human resources report dashboard" loading="lazy">
+							</span>
+							<span class="project-card__body">
+								<span class="project-card__title">Human Resources Report</span>
+								<span class="project-card__desc">Overview, income and Workforce Analysis insights across
+									the workforce.</span>
+								<span class="project-card__tags">
+									<span class="tag tag--powerbi">Power BI</span>
+									<span class="tag tag--powerbi">Dashboard Design</span>
+									<span class="tag tag--powerbi">Data Model</span>
+									<span class="tag tag--powerbi">HR Analytics</span>
+									<span class="tag tag--powerbi">SQL</span>
+
+								</span>
+								<span class="project-card__cta">View case study <i class="fa-solid fa-arrow-right"
+										aria-hidden="true"></i></span>
+							</span>
+						</a>
+					</li>
+
+
+					<li class="project-card">
+						<a href="powerbi-projects/financial-report.html">
+							<span class="project-card__media">
+								<img src="images/Project/PowerBI/Bank_Customer_Churn/Churn_Overview.png"
+									alt="Financial report dashboard" loading="lazy">
+							</span>
+							<span class="project-card__body">
+								<span class="project-card__title">Bank Customer Churn</span>
+								<span class="project-card__desc">The analysis uses customer-level banking information to
+									examine
+									customer churn and behavioural patterns. </span>
+								<span class="project-card__tags">
+									<span class="tag tag--powerbi">Power BI</span>
+									<span class="tag tag--powerbi">Data Visualization</span>
+									<span class="tag tag--powerbi">DAX</span>
+									<span class="tag tag--powerbi">Customer Analytics</span>
+									<span class="tag tag--powerbi">Data Model</span>
+
+								</span>
+								<span class="project-card__cta">View case study <i class="fa-solid fa-arrow-right"
+										aria-hidden="true"></i></span>
+							</span>
+						</a>
+					</li>
+				</ul>
+
+			</section>
+
+
+			<!-- Second Section -->
+			<section id="power_automate" class="main special projects-section">
+				<header class="major section-head">
+					<p class="section-eyebrow">WORKFLOW AUTOMATION &amp; BUSINESS PROCESS IMPROVEMENT</p>
+					<h2><span>Power Automate Projects</span></h2>
+					<div class="section-rule" aria-hidden="true"></div>
+					<p class="section-sub">Explore workflow automation solutions that streamline business processes,
+						reduce manual tasks, and improve communication through automated approvals, status updates, and
+						email notifications.</p>
+					<ul class="skill-chips">
+						<li>Power Automate</li>
+						<li>Approval Workflows</li>
+						<li>Workflow Automation</li>
+						<li>Conditional Logic</li>
+						<li>SharePoint</li>
+						<li>Microsoft Forms</li>
+					</ul>
+				</header>
+
+
+				<ul class="features">
+					<li class="project-card">
+						<a href="power-automate-projects/vacation-approval-request.html">
+							<span class="project-card__media">
+								<img src="images/Project/Power_Automate/Vacation_Request_Approval_Workflow.png"
+									alt="Fuzzy Factory database diagram" loading="lazy">
+							</span>
+							<span class="project-card__body">
+								<span class="project-card__title">Vacation Approval Automation</span>
+								<span class="project-card__desc">Automating Employee Vacation Requests, Approvals &
+									Notifications</span>
+								<span class="project-card__tags">
+									<span class="tag tag--mysql">Power Automate</span>
+									<span class="tag tag--mysql">Microsoft Forms</span>
+									<span class="tag tag--mysql">SharePoint</span>
+									<span class="tag tag--mysql">Microsoft Outlook</span>
+								</span>
+								<span class="project-card__cta">View case study <i class="fa-solid fa-arrow-right"
+										aria-hidden="true"></i></span>
+							</span>
+						</a>
+					</li>
+				</ul>
+
+			</section>
+
+
+
+			<!-- Third Section -->
+			<section id="python" class="main special projects-section">
+				<header class="major section-head">
+					<p class="section-eyebrow">Analysis in Code</p>
+					<h2><span>Python Projects</span></h2>
+					<div class="section-rule" aria-hidden="true"></div>
+					<p class="section-sub">Exploratory analysis in notebooks — loading and cleaning raw data with
+						Pandas, then charting the findings with Matplotlib.</p>
+					<ul class="skill-chips">
+						<li>Pandas</li>
+						<li>Matplotlib</li>
+						<li>Plotly</li>
+					</ul>
+				</header>
+
+				<ul class="features">
+					<li class="project-card">
+						<a href="python-projects/air_traffic_passenger.html">
+							<span class="project-card__media">
+								<img src="images/Project/Python/Air_traffic_Home_slide.png"
+									alt="Air traffic analysis charts" loading="lazy">
+							</span>
+							<span class="project-card__body">
+								<span class="project-card__title">Air Traffic Passengers</span>
+								<span class="project-card__desc">Exploring Passenger Traffic, Airlines, Geography &
+									Seasonal Patterns</span>
+								<span class="project-card__tags">
+									<span class="tag tag--python">Python</span>
+									<span class="tag tag--python">Plotly</span>
+									<span class="tag tag--pandas">Pandas</span>
+								</span>
+								<span class="project-card__cta">View case study <i class="fa-solid fa-arrow-right"
+										aria-hidden="true"></i></span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<!-- Get Started
+						<section id="Storytelling" class="main special projects-section">
+							<header class="major section-head">
+								<p class="section-eyebrow">Insight Communication</p>
+								<h2><span>Storytelling Projects</span></h2>
+								<div class="section-rule" aria-hidden="true"></div>
+								<p class="section-sub">Turning analysis into a narrative &mdash; framing the question, sequencing the evidence and presenting insights decision-makers can act on. <em>Projects: updating.</em></p>
+								<ul class="skill-chips">
+									<li>Data Visualization</li>
+									<li>Storytelling</li>
+									<li>Present Insights</li>
+								</ul>
+							</header>
+							<ul class="features">
+								<li>
+									<a href="python-projects/electric-store.html">
+										<img class="imagefix" style="text-decoration: none;" src="images\electric-store_sales_analysis.png" alt="Adventure Works - Sales & Customer Analysis" width="100%">
+									</a>
+									<p>Electric store - Sales analysis</p>
+								</li>
+							</ul> 
+						</section>
+						-->
+
+
+			<!-- Excel Project Section 
+						<section id="excel" class="main special projects-section">
+							<header class="major section-head">
+								<p class="section-eyebrow">Spreadsheet Analytics</p>
+								<h2><span>Excel &amp; Gsheets Projects</span></h2>
+								<div class="section-rule" aria-hidden="true"></div>
+								<p class="section-sub">Business questions answered with spreadsheets — cleaning raw exports, modelling the numbers, and turning them into dashboards and decks stakeholders can act on.</p>
+								<ul class="skill-chips">
+									<li>Pivot Tables</li>
+									<li>Power Query</li>
+									<li>Data Visualization</li>
+									<li>Storytelling</li>
+								</ul>
+							</header>
+							<ul class="features">
+								<li class="project-card">
+									<a href="excel-projects/adeline-cases-study.html">
+										<span class="project-card__media">
+											<img src="images/adeline-case-study.jpg" alt="Adeline Drink sales case study" loading="lazy">
+										</span>
+										<span class="project-card__body">
+											<span class="project-card__title">Adeline Drink</span>
+											<span class="project-card__desc">How to increase sales?</span>
+											<span class="project-card__tags">
+												<span class="tag tag--sheets">Google Sheets</span>
+												<span class="tag tag--slides">Google Slides</span>
+											</span>
+											<span class="project-card__cta">View case study <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+										</span>
+									</a>
+								</li>
+								<li class="project-card">
+									<a href="excel-projects/plato-pizza.html">
+										<span class="project-card__media">
+											<img src="images/plato-pizza-dashboard.png" alt="Plato's Pizza sales dashboard" loading="lazy">
+										</span>
+										<span class="project-card__body">
+											<span class="project-card__title">Plato's Pizza</span>
+											<span class="project-card__desc">What can we do to improve the pizza store's sales?</span>
+											<span class="project-card__tags">
+												<span class="tag tag--excel">Excel</span>
+											</span>
+											<span class="project-card__cta">View case study <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+										</span>
+									</a>
+								</li>
+								<li class="project-card">
+									<a href="excel-projects/remote-working-survey.html">
+										<span class="project-card__media">
+											<img src="images/remote-work-report-cover.png" alt="Remote working survey report cover" loading="lazy">
+										</span>
+										<span class="project-card__body">
+											<span class="project-card__title">Remote Working Survey</span>
+											<span class="project-card__desc">How has remote work changed in 2021, barriers and opportunities?</span>
+											<span class="project-card__tags">
+												<span class="tag tag--excel">Excel</span>
+											</span>
+											<span class="project-card__cta">View case study <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+										</span>
+									</a>
+								</li>
+								<li class="project-card">
+									<a href="excel-projects/global-unicorn-landscape.html">
+										<span class="project-card__media">
+											<img src="images/global-unicorn-landscape-cover.png" alt="The global unicorn landscape report cover" loading="lazy">
+										</span>
+										<span class="project-card__body">
+											<span class="project-card__title">The Global Unicorn Landscape</span>
+											<span class="project-card__desc">Despite the uncertainty of COVID-19, 2021 spawned more unicorns than the previous years combined.</span>
+											<span class="project-card__tags">
+												<span class="tag tag--excel">Excel</span>
+											</span>
+											<span class="project-card__cta">View case study <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+										</span>
+									</a>
+								</li>
+								<li class="project-card">
+									<a href="excel-projects/hiza-logistics-owee-performance.html">
+										<span class="project-card__media">
+											<img src="images/hiza-logistics.png" alt="Hiza Logistics and Owee transport performance analysis" loading="lazy">
+										</span>
+										<span class="project-card__body">
+											<span class="project-card__title">Hiza Logistics &amp; Owee</span>
+											<span class="project-card__desc">Analyzing transport performance across routes and carriers.</span>
+											<span class="project-card__tags">
+												<span class="tag tag--excel">Excel</span>
+											</span>
+											<span class="project-card__cta">View case study <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+										</span>
+									</a>
+								</li>
+								
+								<li class="project-card">
+									<a href="excel-projects/hotel-group.html">
+										<span class="project-card__media">
+											<img src="images/hotel-group-cover.png" alt="Hotel group cancellation and revenue analysis" loading="lazy">
+										</span>
+										<span class="project-card__body">
+											<span class="project-card__title">Hotel Group</span>
+											<span class="project-card__desc">Analyze cancellation rates, average daily prices &amp; revenue lost.</span>
+											<span class="project-card__tags">
+												<span class="tag tag--excel">Excel</span>
+											</span>
+											<span class="project-card__cta">View case study <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+										</span>
+									</a>
+								</li>
+							</ul>
+							
+						</section>
+						-->
+
+
+			<!-- Certified Badges & Professional Certifications -->
+			<section id="certifications" class="main special projects-section credentials-section">
+				<header class="major section-head">
+					<p class="section-eyebrow">Credentials</p>
+					<h2><span>Certifications</span></h2>
+					<div class="section-rule" aria-hidden="true"></div>
+					<p class="section-sub">Vendor credentials across analytics, business intelligence and cloud —
+						validating hands-on work with Power BI, Microsoft Fabric and AWS.</p>
+				</header>
+
+
+				<div class="cred-block">
+					<h3 class="cred-block__title">Certified Badges</h3>
+					<ul class="badge-grid">
+
+						<!-- Coursea SQL-->
+						<li class="badge badge--certificate-image">
+							<a href="https://coursera.org/verify/CSBJEZL9J5NW" target="_blank">
+								<!-- Certificate Image -->
+								<span class="badge__medal">
+									<img src="images/coursea/Coursea_intro_database.png"
+										alt="Meta Introduction to Databases Certificate">
+								</span>
+
+								<span class="badge__name">Introduction to Databases</span>
+								<span class="badge__meta">
+									Meta · Coursera &middot; July 2023
+								</span>
+							</a>
+						</li>
+
+						<!-- Udemy SQL-->
+						<li class="badge badge--certificate-image">
+							<a href="images/certificates/Udemy_Excel.pdf" target="_blank">
+								<!-- Certificate Image -->
+								<span class="badge__medal">
+									<img src="images/coursea/udemy_excel.png"
+										alt="Meta Introduction to Databases Certificate">
+								</span>
+
+								<span class="badge__name">Excel Data Analysis</span>
+								<span class="badge__meta">
+									Udemy · &middot; July 2023
+								</span>
+							</a>
+						</li>
+
+
+						<!-- Linkedin AI -->
+						<li class="badge badge--certificate-image">
+							<a href="https://www.linkedin.com/learning/certificates/0a72567dea62a8957d8f9adada1710b2458e98af20ddc83701a0f201d732c1dd"
+								target="_blank">
+								<!-- Certificate Image -->
+								<span class="badge__medal">
+									<img src="images/coursea/linkedin_AI.png" alt="Linkedin Generative AI">
+								</span>
+
+								<span class="badge__name">Generative AI</span>
+								<span class="badge__meta">
+									Linkedin · &middot; Dec 2025
+								</span>
+							</a>
+						</li>
+
+
+
+						<!-- Databuzz Finacial Certificate -->
+						<li class="badge badge--certificate-image">
+							<a href="images/certificates/Databuzz_Fincial_insight.pdf" target="_blank">
+								<!-- Certificate Image -->
+								<span class="badge__medal">
+									<img src="images/coursea/Databuzz_analysis.png" alt="Databuzz insights">
+								</span>
+
+								<span class="badge__name">Strategic Financial Insights through Data Analytics</span>
+								<span class="badge__meta">
+									Databuzz · &middot; Aug 2024
+								</span>
+							</a>
+						</li>
+
+						<!-- Databuzz Power BI Certificate -->
+						<li class="badge badge--certificate-image">
+							<a href="images/certificates/Databuzz_Power_BI.pdf" target="_blank">
+								<!-- Certificate Image -->
+								<span class="badge__medal">
+									<img src="images/coursea/Databuzz_power_bi.png" alt="Databuzz Power BI">
+								</span>
+
+								<span class="badge__name">Analyzing Data with Microsoft SQL and Power BI</span>
+								<span class="badge__meta">
+									Databuzz · &middot; Nov 2023
+								</span>
+							</a>
+						</li>
+
+
+						<!-- Data Analytics Using Python Certificate -->
+						<li class="badge badge--certificate-image">
+							<a href="images/certificates/Certificate_DataAnalyticsUsingPython_SuHtarHlaing.pdf"
+								target="_blank">
+								<!-- Certificate Image -->
+								<span class="badge__medal">
+									<img src="images/coursea/Data_Versity_Python.png" alt="Databuzz Power BI">
+								</span>
+
+								<span class="badge__name">Data Analytics Using Python</span>
+								<span class="badge__meta">
+									DataVersity Myanmar &middot; Nov 2025
+								</span>
+							</a>
+						</li>
+
+						<!--
+									<li class="badge badge--google">
+										<span class="badge__medal"><i class="fa-brands fa-google" aria-hidden="true"></i></span>
+										<span class="badge__name">Google Data Analytics Professional</span>
+										<span class="badge__meta">Google &middot; 10/2021</span>
+									</li>
+									<li class="badge badge--meta">
+										<span class="badge__medal"><i class="fa-brands fa-meta" aria-hidden="true"></i></span>
+										<span class="badge__name">Meta Data Analyst</span>
+										<span class="badge__meta">Meta &middot; 08/2024</span>
+									</li>
+									<li class="badge badge--googleai">
+										<span class="badge__medal"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></span>
+										<span class="badge__name">Google AI Essentials</span>
+										<span class="badge__meta">Google &middot; 07/2024</span>
+									</li>
+									-->
+					</ul>
+				</div>
+
+
+
+				<!-- Professional Certifications -->
+				<!--  
+							<div class="cred-block">
+								<h3 class="cred-block__title">Professional Certifications</h3>
+								<ul class="badge-grid badge-grid--3">
+									<!--
+									<li class="badge badge--microsoft">
+										<a href="https://learn.microsoft.com/en-us/users/suhturhlaing-9518/credentials/certification/data-analyst-associate?tab=credentials-tab"
+			   							target="_blank"
+			   							rel="noopener noreferrer">										
+
+											<span class="badge__medal">
+												<img
+    											   src="images/microsoft-certified-associate.png"
+    											    alt="Microsoft Certified Associate"
+    											    class="badge__logo"
+    											  >
+											</span>
+
+											<span class="badge__name">
+												Power BI Data Analyst Associate
+											</span>
+
+											<span class="badge__meta">
+												Microsoft Certified &middot; PL-300
+											</span>
+
+										</a>
+									</li>
+									-->
+
+				<!--
+							
+									<li class="badge badge--microsoft">
+  										<a href="https://learn.microsoft.com/en-us/users/suhturhlaing-9518/credentials/certification/data-analyst-associate?tab=credentials-tab"
+     									target="_blank"
+     									rel="noopener noreferrer">
+									
+										<span class="badge__medal">
+										   <img
+										     src="images/microsoft-certified-associate.png"
+										     alt="Microsoft Certified Associate"
+										     class="badge__logo"
+										   >
+										 </span>
+									 
+										 <span class="badge__name">Power BI Data Analyst Associate</span>
+										 <span class="badge__meta">Microsoft Certified &middot; PL-300</span>
+									 
+										  </a>
+										</li>
+									-->
+
+
+
+
+				<!--
+									<li class="badge badge--fabric">
+										<span class="badge__medal"><i class="fa-brands fa-microsoft" aria-hidden="true"></i></span>
+										<span class="badge__name">Fabric Analytics Engineer Associate</span>
+										<span class="badge__meta">Microsoft Certified</span>
+									</li>
+									<li class="badge badge--aws">
+										<span class="badge__medal"><i class="fa-brands fa-aws" aria-hidden="true"></i></span>
+										<span class="badge__name">AWS Certified Professional</span>
+										<span class="badge__meta">Amazon Web Services</span>
+									</li>
+									
+								</ul>
+							</div>
+						</section>
+						</div>
+					-->
+
+
+				<!-- Professional Certifications -->
+				<div class="cred-block">
+					<h3 class="cred-block__title">Professional Certifications</h3>
+
+					<ul class="cert-grid">
+
+						<!-- For Power BI -->
+						<li class="cert-card">
+							<a href="https://learn.microsoft.com/api/credentials/share/en-us/SuHturHlaing-9518/ED21CB59F466366A?sharingId=EDCEC9C6D485996B"
+								target="_blank" rel="noopener noreferrer" class="cert-card__link">
+
+
+								<!-- Circular Microsoft Badge -->
+								<div class="cert-badge">
+									<div class="cert-badge__inner">
+										<img src="images/microsoft_certified_logo1.png"
+											alt="Microsoft Certified Associate" class="cert-badge__image">
+									</div>
+								</div>
+
+								<!-- Certification Information -->
+								<div class="cert-card__name">
+									Power BI Data Analyst Associate
+								</div>
+
+								<div class="cert-card__meta">
+									Microsoft Certified &middot; PL-300
+								</div>
+
+							</a>
+						</li>
+
+
+						<!-- For Fabric-->
+						<li class="cert-card">
+							<a href="https://learn.microsoft.com/api/credentials/share/en-us/SuHturHlaing-9518/5B20C8D66E888F30?sharingId=EDCEC9C6D485996B"
+								target="_blank" rel="noopener noreferrer" class="cert-card__link">
+
+
+								<!-- Circular Microsoft Badge -->
+								<div class="cert-badge">
+									<div class="cert-badge__inner">
+										<img src="images/fabric_analysis_engineering.jpg"
+											alt="Microsoft Certified Associate" class="cert-badge__image_fabric">
+									</div>
+								</div>
+
+								<!-- Certification Information -->
+								<div class="cert-card__name">
+									Fabric Analytics Engineer Associate
+								</div>
+
+								<div class="cert-card__meta">
+									Microsoft Certified &middot; DP-600
+								</div>
+
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</section>
+		
+
+
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+					<h2>Contact Me</h2>
+					<dl class="alt">
+						<dt><i class="fa-solid fa-envelope-circle-check"></i></dt>
+						<dd><a href="mailto:shturhlaing@gmail.com" aria-label="Email shturhlaing@gmail.com" title="shturhlaing@gmail.com" >shturhlaing@gmail.com</a></dd>
+
+						<dt><i class="fa-brands fa-github"></i></dt>
+						<dd><a href="https://github.com/suhturhlaing"
+								target="_blank">suhturhlaing.github.io/shh_portfolio</a></dd>
+					
+						
+						<dt><i class="fa-brands fa-linkedin"></i></dt>
+						<dd><a href= 'https://www.linkedin.com/in/su-htar-hlaing-987867231/?isSelfProfile=true' target="_blank" >su-htar-hlaing-987867231
+							</a>
+						</dd>
+
+						<dt><i class="fa-sharp fa-solid fa-location-dot"></i></dt>
+						<dd>Yangon, Myanmar</dd>
+
+						<dt><i class="fa-solid fa-mobile-screen-button"></i></dt>
+						<dd>+95 9 89200 7553</dd>
+					</dl>
+
+				</section>
+				<p class="copyright">&copy; Source Code: <a href="https://html5up.net">HTML5 UP</a> | Re-design:
+					suhturhlaing</p>
+			</footer>
+
+
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+
+		<!-- scripts to add typing effect-->
+		<script>
+			var TxtType = function (el, toRotate, period) {
+				this.toRotate = toRotate;
+				this.el = el;
+				this.loopNum = 0;
+				this.period = parseInt(period, 10) || 2000;
+				this.txt = '';
+				this.tick();
+				this.isDeleting = false;
+			};
+
+			TxtType.prototype.tick = function () {
+				var i = this.loopNum % this.toRotate.length;
+				var fullTxt = this.toRotate[i];
+
+				if (this.isDeleting) {
+					this.txt = fullTxt.substring(0, this.txt.length - 1);
+				} else {
+					this.txt = fullTxt.substring(0, this.txt.length + 1);
+				}
+
+				this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+				var that = this;
+				var delta = 200 - Math.random() * 100;
+
+				if (this.isDeleting) { delta /= 2; }
+
+				if (!this.isDeleting && this.txt === fullTxt) {
+					delta = this.period;
+					this.isDeleting = true;
+				} else if (this.isDeleting && this.txt === '') {
+					this.isDeleting = false;
+					this.loopNum++;
+					delta = 500;
+				}
+
+				setTimeout(function () {
+					that.tick();
+				}, delta);
+			};
+
+			window.onload = function () {
+				var elements = document.getElementsByClassName('typewrite');
+				for (var i = 0; i < elements.length; i++) {
+					var toRotate = elements[i].getAttribute('data-type');
+					var period = elements[i].getAttribute('data-period');
+					if (toRotate) {
+						new TxtType(elements[i], JSON.parse(toRotate), period);
+					}
+				}
+				// INJECT CSS
+				var css = document.createElement("style");
+				css.type = "text/css";
+				css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+				document.body.appendChild(css);
+			};
+		</script>
+</body>
+
+</html>
