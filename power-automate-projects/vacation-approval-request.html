@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vacation Request | Power Automate Project</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/project-detail.css">
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+        .social-links { margin: 50px 0 10px; }
+        /* .project-footer { flex-direction: column; align-items: center; gap: 16px; text-align: center; } */
+        .back-portfolio { margin-bottom: 0; }
+        @media (max-width: 600px) {
+            .project-subtitle { font-size: 17px; }
+            .project-text p, .info-card p, .brief-card p { text-align: justify; }
+            .project-footer { align-items: center; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="project-header">
+
+        <div class="project-header-inner">
+
+            <a href="../index.html" class="back-link">
+                ← &nbsp Back to Home
+            </a>
+
+            <p class="project-label">POWER AUTOMATE PROJECT</p>
+
+            <h1>Vacation Request Approval Workflow</h1>
+
+            <p class="project-subtitle">
+                Automating Employee Vacation Requests, Approvals & Notifications
+            </p>
+
+            <div class="project-skills">
+                <span>Power Automate</span>
+                <span>Microsoft Forms</span>
+                <span>SharePoint</span>
+                <span>Microsoft Outlook</span>
+                <span>Approval Workflows</span>
+                <span>Workflow Automation</span>
+                <span>Conditional Logic</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="project-container">
+
+        <!-- Project Overview -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                 <span>01</span> 
+                <h2>Project Overview</h2>
+            </div>
+
+            <div class="project-text">
+
+                <p>
+                    This project automates the employee vacation request process using
+                    Microsoft Power Automate. The workflow captures vacation requests,
+                    stores request information in SharePoint, sends the request to a
+                    manager for approval, and automatically updates the request status
+                    based on the approval decision.
+                </p>
+
+                <p>
+                    The workflow also sends email notifications to the requester when
+                    the request is submitted, approved, or rejected, helping reduce
+                    manual communication and providing a consistent approval process.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Business Problem -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <span>02</span> 
+                <h2>Business Problem</h2>
+            </div>
+
+            <div class="project-text">
+
+                <p>
+                    A manual vacation request process can require employees,
+                    managers, and administrators to communicate through
+                    multiple steps. This can make it difficult to track request
+                    status and ensure that employees receive timely updates.
+                </p>
+
+                <p>
+                    The goal of this project was to create a centralized and
+                    automated workflow that manages the request from submission
+                    through the final approval or rejection decision.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Solution -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <span>03</span>
+                <h2>Solution</h2>
+            </div>
+
+            <div class="project-text">
+
+                <p>
+                    A Power Automate workflow was created to automate the complete
+                    vacation request approval process.
+                </p>
+
+                <p>
+                    When an employee submits a vacation request, the workflow
+                    retrieves the submitted information, creates a corresponding
+                    SharePoint item, and notifies the requester that the request
+                    has been submitted.
+                </p>
+
+                 <p>
+                    The request is then sent to the designated manager for
+                    approval. A condition determines whether the request is
+                    approved or rejected, after which the SharePoint record is
+                    updated and the requester receives the appropriate email
+                    notification.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="project-section">
+
+    <div class="section-heading">
+        <span>04</span>
+        <h2>Workflow Process</h2>
+    </div>
+
+    <div class="brief-grid">
+
+        <div class="brief-card">
+            <h3>01</h3>
+            <p>
+                Employee submits a vacation request.
+            </p>
+        </div>
+
+        <div class="brief-card">
+            <h3>02</h3>
+            <p>
+                The submitted response details are retrieved.
+            </p>
+        </div>
+
+        <div class="brief-card">
+            <h3>03</h3>
+            <p>
+                A new request record is created in SharePoint.
+            </p>
+        </div>
+
+        <div class="brief-card">
+            <h3>04</h3>
+            <p>
+                The requester receives a submission notification.
+            </p>
+        </div>
+
+        <div class="brief-card">
+            <h3>05</h3>
+            <p>
+                The request is sent to the manager for approval.
+            </p>
+        </div>
+
+        <div class="brief-card">
+            <h3>06</h3>
+            <p>
+                A condition evaluates the approval decision.
+            </p>
+        </div>
+
+        <div class="brief-card">
+            <h3>07</h3>
+            <p>
+                The request is updated as approved or rejected.
+            </p>
+        </div>
+
+        <div class="brief-card">
+            <h3>08</h3>
+            <p>
+                The requester receives the final notification.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="project-section">
+
+    <div class="section-heading">
+        <span>05</span>
+        <h2>Approval Logic</h2>
+    </div>
+
+    <div class="table-grid">
+
+        <div class="info-card">
+
+            <h3>Approved</h3>
+
+            <p>
+                When the manager approves the request, the workflow
+                updates the request status to Approved and sends an
+                approval notification to the requester.
+            </p>
+
+        </div>
+
+        <div class="info-card">
+
+            <h3>Rejected</h3>
+
+            <p>
+                When the manager rejects the request, the workflow
+                updates the request status to Rejected and sends a
+                rejection notification to the requester.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- Tools -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <span>06</span>
+                <h2>Skills & Technologies</h2>
+            </div>
+
+            <div class="tools-list">
+
+                <span>Power Automate</span>
+                <span>Microsoft Forms</span>
+                <span>SharePoint</span>
+                <span>Microsoft Outlook</span>
+                <span>Approval Workflows</span>
+                <span>Workflow Automation</span>
+                <span>Conditional Logic</span>
+
+            </div>
+
+        </section>
+
+
+        
+        <section class="project-section">
+
+            <div class="section-heading">
+                <span>07</span>
+                <h2>Project Outcome</h2>
+            </div>
+        
+            <div class="project-text">
+            
+                <p>
+                    The automated workflow provides a structured process for
+                    managing vacation requests from submission through the
+                    final decision.
+                </p>
+            
+                <p>
+                    By connecting Microsoft Forms, SharePoint, Power Automate,
+                    approval actions, and email notifications, the workflow
+                    reduces manual follow-up and provides clear status updates
+                    to both requesters and managers.
+                </p>
+            
+            </div>
+
+        </section>
+
+
+        <!-- Power Automate Flow -->
+        <section class="project-section">
+
+            <div class="section-heading">
+                <span>08</span>
+                <h2>Automate Flow</h2>
+            </div>
+
+            <div class="data-model">
+
+                <img
+                    src="../images/Project/Power_Automate/Power_Automate_Project.png"
+                    alt="vacation Request"
+                >
+
+            </div>
+
+        </section>
+
+		
+
+
+        <!-- Project link -->
+        <section class="project-section dashboard-link-section">
+
+            <div class="section-heading">
+                 <!--  <span>07</span> -->
+                <h2>Interactive Power Automate Workflow</h2>
+            </div>
+
+            <p>
+                Explore the automated vacation request process
+            </p>
+
+            <a
+                href="https://github.com/suhturhlaing/vacation-request-approval-workflow"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="dashboard-button"
+            >
+                View Workflow on GitHub →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Contact / social links -->
+	<ul class="social-links">
+		<li>
+			<a href="https://www.linkedin.com/in/su-htar-hlaing-987867231/?isSelfProfile=true" target="_blank" aria-label="LinkedIn profile" title="LinkedIn">
+				<i class="icon brands fa-linkedin-in" aria-hidden="true"></i>
+               
+			</a>
+		</li>
+		<li>
+			<a href="mailto:shturhlaing@gmail.com" aria-label="Email shturhlaing@gmail.com" title="shturhlaing@gmail.com">
+				<i class="icon solid fa-envelope" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li>
+			<a href="tel:+95975373636" aria-label="Phone +95 9 89200 7553" title="+95 9 89200 7553">
+				<i class="icon solid fa-phone" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/suhturhlaing" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
+				<i class="icon brands fa-github" aria-hidden="true"></i>
+			</a>
+		</li>
+	</ul>
+
+
+    <!-- Footer -->
+    <footer class="project-footer">
+
+       
+
+        <a href="../index.html" class="back-portfolio" >
+            ← Back to Portfolio
+        </a>
+
+        <p>
+            © Su Htur's Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>
