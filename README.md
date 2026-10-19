@@ -1,6 +1,5 @@
 
 ## 🚀 About Me
-I'm Giang, a data analyst.
 
 I am Su Htar,
 
